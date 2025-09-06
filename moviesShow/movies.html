@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imgs/icon.png" type="image/x-icon" />
+    <title>Movies</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../bootstrap-files/bootstrap.min.css" />
+    <link rel="stylesheet" href="../bootstrap-files/mdb.min.css" />
+    <link rel="stylesheet" href="movies.css" />
+</head>
+<body>
+    <header class="header">
+        <nav class="d-flex align-items-center">
+            <div class="category d-flex align-items-center">
+                <a href="../home/index.html"><img src="../imgs/Logo.png" alt=""></a>
+                <ul class="d-flex align-items-center">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">New & Popular</a></li>
+                    <li><a href="#">My List</a></li>
+                </ul>
+            </div>
+            <div class="userInf d-flex align-items-center">
+                <img src="../imgs/icon-7797704_640.png" alt="">
+                <h1>Osama</h1>
+                <!-- <p>Log Out</p> -->
+            </div>
+        </nav>
+
+        <div class="showMoviePanner">
+            <h1 class="title"></h1>
+            <div class="linK d-flex align-items-center gap-5">
+                <a href="#">Watch</a>
+                <a href="#">My List</a>
+            </div>
+            <p></p>
+        </div>
+    </header>
+
+    <section class="trending">
+        <h2>Trending Now</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            </div>
+            <div class="swiper-button-next btnStyle"></div>
+            <div class="swiper-button-prev btnStyle"></div>
+        </div>
+    </section>
+
+    <section class="popular">
+        <h2>Popular Movies</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper popularSwiper">
+            </div>
+            <div class="swiper-button-next btnStyle"></div>
+            <div class="swiper-button-prev btnStyle"></div>
+        </div>
+    </section>
+    <section class="Comedy">
+        <h2>Comedy Movies</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper ComedySwiper">
+            </div>
+            <div class="swiper-button-next btnStyle"></div>
+            <div class="swiper-button-prev btnStyle"></div>
+        </div>
+    </section>
+    <section class="action">
+        <h2>Action Movies</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper actionSwiper">
+            </div>
+            <div class="swiper-button-next btnStyle"></div>
+            <div class="swiper-button-prev btnStyle"></div>
+        </div>
+    </section>
+    <section class="Drama">
+        <h2>Drama Movies</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper dramaSwiper">
+            </div>
+            <div class="swiper-button-next btnStyle"></div>
+            <div class="swiper-button-prev btnStyle"></div>
+        </div>
+    </section>
+    <section class="topRateMovies">
+        <h2>Top Rate Movies</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper topRateSwiper">
+            </div>
+            <div class="swiper-button-next btnStyle"></div>
+            <div class="swiper-button-prev btnStyle"></div>
+        </div>
+    </section>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="movies.js"></script>
+    <script src="../bootstrap-files/mdb.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../bootstrap-files/bootstrap.bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            // الإعدادات الأساسية
+            slidesPerView: 5,
+            slidesPerGroup: 5,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            
+            // إعدادات الاستجابة للشاشات المختلفة
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
+                    spaceBetween: 15,
+                },
+                // عندما يكون عرض الشاشة >= 640px
+                600: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    spaceBetween: 20,
+                },
+                // عندما يكون عرض الشاشة >= 768px
+                768: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                    spaceBetween: 25,
+                },
+                // عندما يكون عرض الشاشة >= 1024px
+                1024: {
+                    slidesPerView: 4,
+                    slidesPerGroup: 4,
+                    spaceBetween: 30,
+                },
+                // عندما يكون عرض الشاشة >= 1280px
+                1280: {
+                    slidesPerView: 5,
+                    slidesPerGroup: 5,
+                    spaceBetween: 30,
+                },
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,454 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto','Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: black;
+}
+header{
+    min-height: 100vh;
+    background-image: url("../imgs/pg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+}
+.divider{
+    display:block; 
+    width:100%; 
+    height:40px;
+    
+}
+
+header .darkScreenTop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    background:linear-gradient(to bottom, black , transparent ) ;
+}
+header .darkScreenBottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    background:linear-gradient(to top, black , transparent ) ;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    .logo{
+        width: 200px;
+    }
+    .signInBtn{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .selection{
+            position: relative;
+            select {
+                padding: 8px 8px 8px 30px;
+                border: 1px solid white;
+                outline: 0;
+                background-color: rgba(0, 0, 0, 0.085);
+                color: white;
+                border-radius: 5px;
+            }
+            i{
+                color: white;
+                position: absolute;
+                top: 12px;
+                left: 10px;
+            }
+        }
+    }
+}
+
+.main{
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+        max-width: 50%;
+        font-size: 58px;
+        font-weight: 900;
+        line-height: 70px;
+        margin-bottom: 10px;
+    }
+    h5{
+        font-weight: 900;
+    }
+    p{
+        font-weight: 400;
+    }
+    .formSignUp{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        /* input{
+            background-color: gray;
+        } */
+        .formInput{
+            input{
+                background-color: rgba(128, 128, 128, 0.485);
+                color: rgba(255, 255, 255, 0.771);
+                width: 350px;
+            }
+            label{
+                color: #bbbbbb;
+            }
+        }
+        .form-floating > label::after {
+            background-color: transparent !important;
+            
+        }
+        button{
+            font-size: 22px;
+            font-weight: 700 ;
+            padding: 10px;
+        }
+    }
+}
+
+
+
+/* section two (trending) */
+.trending{
+
+    height: 320px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    h2{
+        color: white;
+        margin: 0 0 30px 100px;
+        font-size:30px;
+    }
+}
+.swiper {
+            width: 90%;
+            height: 100%;
+            padding: 10px 60px;
+        }
+
+        .swiper-slide {
+            position: relative;
+            text-align: center;
+            font-size: 18px;
+            background: #444;
+            display: flex;
+            overflow: visible;
+            border-radius: 15px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            h1{
+                font-size: 100px;
+                position: absolute;
+                bottom: -20px;
+                left: -15px;
+                text-shadow:
+                    -2px -2px 0 #ffffff,
+                    2px -2px 0 #ffffff,
+                    -2px 2px 0 #ffffff,
+                    2px 2px 0 #ffffff;
+                transition: all 0.3s ease-out;
+            }
+            transition: all 0.4s ease-out;
+        }
+        .swiper-slide:hover h1{
+            scale: 1.06;
+            border-radius: 15px;
+        }
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.4s ease-out;
+        }
+        .swiper-slide img:hover + .swiper-slide{
+            scale: 1.06;
+            border-radius: 15px;
+        }
+        .swiper-slide img:hover{
+            scale: 1.06;
+            border-radius: 15px;
+        }
+        .btnStyle{
+            color: rgb(255, 255, 255);
+            background-color: rgba(175, 175, 175, 0.463);
+            font-size: 16px;
+            padding: 40px 5px;
+            border-radius: 20px;
+        }
+        .btnStyle:hover{
+            background-color: rgba(128, 128, 128, 0.751);
+        }
+
+/* section of reasonToJoin */
+
+.reasonToJoin{
+    margin-bottom: 100px;
+    
+    h2{
+        color: white;
+        margin-top: 150px ;
+        margin-bottom: 50px;
+        margin-left: 30px;
+    }
+    .containReasons{
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    .oneDiv{
+        background:linear-gradient(135deg, rgba(36, 36, 81, 0.744) 50% , rgba(148, 24, 24, 0.316)) ;
+        padding: 20px;
+        border-radius: 20px;
+        max-width: 270px;
+        min-height: 300px;
+        color: white;
+        position: relative;
+        h3{
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        p{
+            color: #444444bc;
+        }
+
+        img{
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+
+/* section of questions */
+
+.questions{
+    margin-bottom: 50px;
+    h2{
+        color: white;
+        margin-bottom: 50px;
+        margin-left: 30px;
+    }
+    .accordion{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        margin-top: 10px;
+        font-size: 22px;
+        color:white ;
+        background-color: #444;
+        position: relative;
+        border: 0;
+        outline: 0;
+        transition:  0.4s ease-in-out;
+    }
+    .accordion:hover{
+        background-color: #626262;
+    }
+    .accordion::after{
+        content: '\002B';
+        position: absolute;
+        right: 26px;
+        font-size: 26px;
+    }
+    .active::after{
+        content: '\00D7';
+        position: absolute;
+        right: 26px;
+        font-size: 26px;
+    }
+    .panel{
+        padding: 0 20px;
+        padding-bottom: 0;
+        background-color: #444;
+        border-top: 1px solid black;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        p{
+            margin-bottom: 20px;
+            color: white;
+            font-size: 22px;
+        }
+    }
+
+
+
+
+
+
+}
+
+/* last section   (readyForSend)----*/
+.readyForSend{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+    .formSignUp{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .formInput{
+            input{
+                background-color: rgba(44, 44, 44, 0.485);
+                color: rgba(255, 255, 255, 0.771);
+                width: 450px;
+            }
+            label{
+                color: rgba(255, 255, 255, 0.575);
+            }
+        }
+        .form-floating > label::after {
+            background-color: transparent !important;
+        }
+        button{
+            font-size: 22px;
+            font-weight: 700 ;
+            padding: 10px;
+        }
+    }
+}
+
+
+/* footer---------- */
+
+footer{
+    
+    margin-bottom: 150px;
+    .selection{
+            position: relative;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            select {
+                padding: 8px 8px 8px 30px;
+                border: 1px solid white;
+                outline: 0;
+                background-color: rgba(0, 0, 0, 0.085);
+                color: white;
+                border-radius: 5px;
+            }
+            i{
+                color: white;
+                position: absolute;
+                top: 12px;
+                left: 10px;
+            }
+        }
+    
+}
+
+/* --------------------------------------------------media query----------------------------------------------- */
+
+@media  screen and (max-width: 992px){
+    .main{
+    h1{
+        max-width: 60%;
+        font-size: 50px;
+    }
+}
+}
+
+@media  screen and (max-width: 768px){
+    nav{
+    .logo{
+        width: 150px;
+    }
+    .signInBtn{
+        gap: 10px;
+    }
+}
+
+    .main{
+    h1{
+        max-width: 80%;
+        font-size: 35px;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+    h5{
+        font-weight: 700;
+    }
+    p{
+        padding:0 10px;
+        font-weight: 400;
+    }
+    .formSignUp{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        /* input{
+            background-color: gray;
+        } */
+        .formInput{
+            input{
+                background-color: rgba(128, 128, 128, 0.485);
+                width: 250px;
+            }
+            label{
+                color: #bbbbbb;
+            }
+        }
+        .form-floating > label::after {
+            background-color: transparent !important;
+            
+        }
+        button{
+            font-size: 12px;
+            font-weight: 500 ;
+            padding: 19px 5px;
+        }
+    }
+    }
+    .reasonToJoin{
+    
+    h2{
+        margin-left: 10px;
+    }
+    .oneDiv{
+        max-width: 370px;
+    }
+    }
+
+    .readyForSend{
+    .formSignUp{
+        gap: 5px;
+        button{
+            font-size: 12px;
+            font-weight: 500 ;
+            padding: 19px 5px;
+        }
+        .formInput{
+            input{
+                width: 250px;
+            }
+        }
+    }
+}
+}

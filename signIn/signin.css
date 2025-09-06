@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto','Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: rgb(84, 84, 84);
+}
+header{
+    min-height: 100vh;
+    background-image: url("../imgs/pg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+
+    .darkScreenTop{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 450px;
+        z-index: -1;
+        background:linear-gradient(to bottom, black , transparent ) ;
+    }
+    .darkScreenBottom{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 450px;
+        z-index: -1;
+        background:linear-gradient(to top, black , transparent ) ;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        .logo{
+            width: 250px;
+            cursor: pointer;
+        }
+    }
+
+    .formSection{
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        form{
+            width: 400px;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.43);
+
+            h1{
+                color: white;
+                margin-bottom: 20px;
+                font-weight: bolder;
+            }
+            input{
+                background-color: transparent;
+                color: white;
+            }
+            .eyePassword:focus-within .eyeChange{
+                visibility: visible;
+            }
+            .eyePassword{
+                position: relative;
+
+                .eyeChange{
+                    position: absolute;
+                    color: white;
+                    right: 10px;
+                    bottom: 20px;
+                    cursor: pointer;
+                    visibility: hidden;
+                    transition: 0.4s;
+                }
+            }
+            input:focus{
+                background-color: transparent;
+                color: white;
+            }
+            label{
+                color: #bbbbbb;
+            }
+            label::after {
+                background-color: transparent !important;
+            }
+            .err{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 5px;
+                margin-bottom: 10px;
+                .emailError{
+                    color: rgb(255, 18, 18);
+                    font-weight: 400;
+                    font-size: 14px;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    margin: 0;
+                    padding: 0;
+                }
+                .passwordError{
+                    color: rgb(255, 18, 18);
+                    font-weight: 400;
+                    font-size: 14px;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    margin: 0;
+                    padding: 0;
+                }
+                i{
+                    margin: 0;
+                    color: rgb(255, 18, 18);
+                    font-weight: 400;
+                    font-size: 14px;
+                    padding: 0;
+                    display: none;
+                }
+            }
+            .firstBtn{
+                width: 100%;
+                font-size: 18px;
+                background-color: rgba(255, 23, 23, 0.881);
+                
+            }
+            h4{
+                color: #bbbbbb;
+                margin: 10px 0;
+                width: 100%;
+                text-align: center;
+            }
+            .secondBtn{
+                width: 100%;
+                font-size: 18px;
+                outline: 0;
+                border: 0;
+                background-color: rgba(57, 57, 57, 0.593);
+                color: aliceblue;
+                padding: 8px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+            .secondBtn:hover{
+                background-color: rgba(57, 57, 57, 0.753);
+            }
+            .forgetPass{
+                text-decoration: underline;
+                color: white;
+                margin-left: 30%;
+            }
+            .rememberMe {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: white;
+                margin-top: 15px;
+                input{
+                    cursor: pointer;
+                }
+                p{
+                    margin: 0;
+                }
+            }
+            h3{
+                color: rgb(85, 85, 85);
+                font-size: 16px;
+                font-weight: 500;
+                margin-top: 15px;
+                a{
+                    color: white;
+                    font-weight: 900;
+                }
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+
+            
+        }
+    }
+}
+
+footer{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white !important;
+    a{
+        color: rgba(255, 255, 255, 0.737) !important;
+    }
+    .selection{
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        select {
+            padding: 8px 8px 8px 30px;
+            border: 1px solid white;
+            outline: 0;
+            background-color: rgba(0, 0, 0, 0.085);
+            color: white;
+            border-radius: 5px;
+        }
+        i{
+            color: white;
+            position: absolute;
+            top: 12px;
+            left: 10px;
+        }
+    }
+    
+}

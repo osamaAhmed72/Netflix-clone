@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imgs/icon.png" type="image/x-icon" />
+    <title>Login</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../bootstrap-files/bootstrap.min.css" />
+    <link rel="stylesheet" href="../bootstrap-files/mdb.min.css" />
+    <link rel="stylesheet" href="signin.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="../index.html"><img class="logo" src="../imgs/Logo.png" alt=""></a>
+        </nav>
+        <div class="darkScreenTop"></div>
+        <div class="darkScreenBottom"></div>
+
+        <div class="formSection">
+            <form  action="../moviesShow/movies.html" class="formControl" onkeydown="valid()">
+                <h1>Sign In</h1>
+                <div class="form-floating mb-1">
+                    <input type="email" class="form-control" id="floatingInputtt" placeholder="name@example.com">
+                    <label for="floatingInputtt">Email address</label>
+                </div>
+                <div class="err">
+                    <i class="fa-regular fa-circle-xmark errCirclemail"></i><p class="emailError"></p>
+                </div>
+                <div class="eyePassword form-floating mb-1">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                    <i class="eyeChange fa-solid fa-eye"></i>
+                </div>
+                <div class="err">
+                    <i class="fa-regular fa-circle-xmark errCirclPass"></i><p class="passwordError"></p>
+                </div>
+                <button type="submit" class="btn btn-danger firstBtn">Sign In</button>
+                <h4>OR</h4>
+                <button type="button" class="secondBtn">Use a Sign-in code </button>
+                <a href="#" class="forgetPass">Forgot password?</a>
+                <div class="rememberMe">
+                    <input type="checkbox" style="transform: scale(1.5);">
+                    <p>Remember Me</p>
+                </div>
+                <h3>New to Netflix? <a href="#">Sign up now.</a></h3>
+            </form>
+        </div>
+    </header>
+
+    <footer class="text-start container">
+        <a href="#" >Questions? Contact us.</a>
+        <!-- Grid container -->
+        <div class="mt-2" >
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" >FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#!" >Cookie Preferences</a>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+                <!--Grid column-->
+    
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" >Help Center</a>
+                        </li>
+                        <li>
+                            <a href="#!" >Corporate Information</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!--Grid column-->
+    
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" >Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+    
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" >Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+        <!-- selection footer -->
+        <div class="selection">
+            <i class="fa-solid fa-globe" ></i>
+            <select name="lang" id="lang">
+                <option value="English">English</option>
+                <option value="Arabic">Arabic</option>
+            </select>
+        </div>
+
+        <p style="font-size: 16px; margin-top: 20px;">Netflix Egypt</p>
+        
+    </footer>
+
+
+    <script src="singIn.js"></script>
+    <script src="../bootstrap-files/mdb.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../bootstrap-files/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
